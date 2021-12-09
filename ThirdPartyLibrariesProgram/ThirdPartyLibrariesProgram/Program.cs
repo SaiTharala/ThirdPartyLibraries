@@ -7,8 +7,10 @@ namespace ThirdPartyLibrariesProgram
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            CsvHandler csv = new CsvHandler();
-            csv.ImplementCsvHandling();
+            CsvHandler csvExport = new CsvHandler();
+            csvExport.ImplementCsvHandling();
+            CsvToJson Cj = new CsvToJson();
+            Cj.ImplementCsvToJson();
         }
     }
 }
